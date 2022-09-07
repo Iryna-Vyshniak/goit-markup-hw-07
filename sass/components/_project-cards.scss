@@ -32,6 +32,9 @@
 }
 
 .project-cards__title {
+margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: $primary-bold;
   font-size: $card-title-font-size;
   line-height: 2;
@@ -39,6 +42,8 @@
 }
 
 .project-cards__description {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.9;
 }
 
