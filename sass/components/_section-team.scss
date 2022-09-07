@@ -1,0 +1,50 @@
+.member-team {
+    @extend %centered;
+    @include sectionPad();
+    background-color: $bg-ghost-white;
+}
+
+.section-set--team{
+     @extend %list;
+}
+.section-set__item--member {
+    max-width: 270px;
+    min-height: 428px;
+
+    background-color: $white-color;
+    box-shadow: $team-box-shadow;
+    border-radius: 0 0 4px 4px;
+
+    line-height: 1.2;
+}
+
+.thumb-member {
+    position: relative;
+
+    width: 270px;
+    height: 260px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.section-set__images--member {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-set__title--name {
+    font-size: $primary-font-size;
+    font-weight: $accent-weight;
+}
+
+.section-set__description--member {
+    @extend %description;
+    margin-bottom: 16px;
+}
