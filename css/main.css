@@ -934,7 +934,9 @@ body {
 
 .form__input:focus + .form__label, .form__input:hover + .form__label, .form__input:not(:placeholder-shown) + .form__label {
   color: #2196f3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .form__field--field-comment {
@@ -981,12 +983,16 @@ body {
 .policy-label__checkbox:checked ~ .policy-label__icon--square {
   fill: #2196f3;
   opacity: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 .policy-label__checkbox:checked ~ .policy-label__icon--check {
   fill: #2196f3;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .policy-label__icon--square {

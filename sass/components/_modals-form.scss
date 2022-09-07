@@ -70,7 +70,8 @@
   &:hover + .form__label,
   &:not(:placeholder-shown) + .form__label {
     color: $accent-dodger-blue;
-    transition: color $timing-function;
+    @include transition();
+    transition-property: color;
   }
 }
 
@@ -122,13 +123,15 @@
   &:checked ~ .policy-label__icon--square {
     fill: $accent-dodger-blue;
     opacity: 0;
-    transition: fill $timing-function, background-color $timing-function;
+    @include transition();
+      transition-property: fill;
   }
 
   &:checked ~ .policy-label__icon--check {
     fill: $accent-dodger-blue;
     opacity: 1;
-    transition: opacity $timing-function;
+    @include transition();
+    transition-property: fill;
   }
 }
 
