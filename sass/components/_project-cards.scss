@@ -8,8 +8,6 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  border: 1px solid $border-whisper-grey;
-
   @include transition();
   transition-property: box-shadow;
     &:nth-child(3n) {
@@ -30,7 +28,7 @@
   display: block;
   max-width: 100%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .project-cards__title {
@@ -45,13 +43,14 @@
 }
 
 .project-cards__content {
-  /* only this code: padding: 20px 24px; or below - what is better????  */
-  padding: 20px 24px;
-  /* may be better use code with codes in .project-cards__content, .project-cards__item, .thumb-overlay,  than content will be 322 x 70, but focus separated blocks in card */
-  /* max-width: 322px;
-  min-height: 70px;
-  margin-right: auto;
-  margin-left: auto; */
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border-left: 1px solid $border-whisper-grey;
+  border-right: 1px solid $border-whisper-grey;
+  border-bottom: 1px solid $border-whisper-grey;
 }
 
 .thumb-overlay {
@@ -64,7 +63,7 @@
 
 .project-cards__overlay {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   width: 100%;

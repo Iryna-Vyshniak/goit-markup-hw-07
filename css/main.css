@@ -270,7 +270,7 @@ summary {
   color: inherit;
 }
 
-.section-set__description--member, .section-set__description {
+.member-content__description, .section-set__description {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -616,38 +616,33 @@ body {
 
 .section-set__item--member {
   max-width: 270px;
-  min-height: 428px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   line-height: 1.2;
 }
 
-.thumb-member {
-  position: relative;
-  width: 270px;
-  height: 260px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
 .section-set__images--member {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.section-set__title--name {
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.member-content__name {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.section-set__description--member {
+.member-content__description {
   margin-bottom: 16px;
 }
 
@@ -1061,7 +1056,6 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
@@ -1080,7 +1074,7 @@ body {
   display: block;
   max-width: 100%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .project-cards__title {
@@ -1095,13 +1089,13 @@ body {
 }
 
 .project-cards__content {
-  /* only this code: padding: 20px 24px; or below - what is better????  */
-  padding: 20px 24px;
-  /* may be better use code with codes in .project-cards__content, .project-cards__item, .thumb-overlay,  than content will be 322 x 70, but focus separated blocks in card */
-  /* max-width: 322px;
-  min-height: 70px;
-  margin-right: auto;
-  margin-left: auto; */
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .thumb-overlay {
@@ -1113,7 +1107,7 @@ body {
 
 .project-cards__overlay {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   padding: 63px 24px;
