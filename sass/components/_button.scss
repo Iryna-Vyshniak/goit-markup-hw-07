@@ -1,11 +1,10 @@
 .button {
-    /* border: 1px solid transparent; */
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.button__main-button {
+.main-button {
     @extend %centered;
     min-width: 216px;
     padding: 10px 32px;

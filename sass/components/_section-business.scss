@@ -1,15 +1,26 @@
 .business {
-  @extend %centered;
+@extend %centered;
   @include sectionPad($size-top: 47px, $size-bottom: 94px)
-}
+} 
 
-.section-set__item--business {
-  position: relative;
+.business-set {
+     position: relative;
   @include centeredFlex();
   max-width: 370px;
 }
 
-.section-set__descr {
+
+.business-set__item {
+  position: relative;
+  @include centeredFlex();
+  max-width: 370px;
+
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+
+.set__descr {
   position: absolute;
   left: 0;
   bottom: 0;

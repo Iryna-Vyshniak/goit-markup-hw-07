@@ -2,12 +2,22 @@
     @include sectionPad($size-top: 94px, $size-bottom: 47px);
 }
 
-.section-set__item--advantages {
+
+.advantages-set {
     @extend %list;
-    max-width: 270px;
+    @include sectionSetFlex($type: flex, $wrap: nowrap);
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.thumb-inner {
+.advantages-set__item {
+    @extend %list;
+    max-width: 270px;   
+}
+
+
+.advantages-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,12 +26,12 @@
   min-height: 120px;
   margin-top: 0;
   margin-bottom: 30px;
-  /* padding: 25px 101px; */
+  
   background: $bg-ghost-white;
   border-radius: 4px;
 }
 
-.section-set__description {
+.set__description {
     @extend %description;
     font-size: $secondary-font-size;
 }

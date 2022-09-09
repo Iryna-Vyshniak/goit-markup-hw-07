@@ -23,10 +23,6 @@ body {
     flex: 1 1 auto;
 }
 
-/* :focus {
-  outline: 2px solid rgb(0, 0, 255);
-} */
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -42,13 +38,11 @@ body {
 
 .container {
     max-width: 1200px;
-    /* 1170 + 15 + 15 */
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .row {
     display: flex;
     align-items: center;
@@ -65,7 +59,9 @@ body {
 }
 
 .section {
+    @extend %list;
     @include sectionPad($size-top: 94px, $size-bottom: 94px);
+        
 }
 
 .section__title {
@@ -77,6 +73,7 @@ body {
     font-weight: $primary-bold;
     line-height: 1.2;
 }
+
 
 .title {
     @extend %centered;
@@ -96,14 +93,8 @@ body {
     color: $primary-text-color;
 }
 
-.section-set {
-@include sectionSetFlex($type: flex, $wrap: nowrap);
-  &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-}
 
-.section-set__title {
+.set__title {
     margin-top: 0;
     margin-bottom: 10px;
 }

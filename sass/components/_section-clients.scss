@@ -1,27 +1,33 @@
-.section-set--clients{
+.clients-set {
     @extend %list;
+        @include sectionSetFlex($type: flex, $wrap: nowrap);
+    
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.section-set__logo--clients {
+.clients-set__logo {
     @include centeredFlex();
-    justify-content: center;
-    min-width: 170px;
-    min-height: 92px;
-
-    color: $border-clients;
-    border: 1px solid $border-clients;
-    border-radius: 4px;
-
-    @include transition();
-    transition-property: color, border;
-    &:hover,
-    &:focus,
-    &:active {
-        color: $accent-dodger-blue;
-        border: 1px solid $accent-dodger-blue;
-    }
+        justify-content: center;
+        min-width: 170px;
+        min-height: 92px;
+    
+        color: $border-clients;
+        border: 1px solid $border-clients;
+        border-radius: 4px;
+    
+        @include transition();
+        transition-property: color, border;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: $accent-dodger-blue;
+            border: 1px solid $accent-dodger-blue;
+        }
 }
 
-.section-set__icon--clients {
+.clients-set__icon {
     fill: currentColor;
 }

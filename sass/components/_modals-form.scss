@@ -71,7 +71,7 @@
   &:not(:placeholder-shown) + .form__label {
     color: $accent-dodger-blue;
     @include transition();
-    transition-property: color;
+      transition-property: color;
   }
 }
 
@@ -131,7 +131,7 @@
     fill: $accent-dodger-blue;
     opacity: 1;
     @include transition();
-    transition-property: fill;
+      transition-property: fill;
   }
 }
 

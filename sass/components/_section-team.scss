@@ -1,23 +1,27 @@
 .member-team {
     @extend %centered;
-    @include sectionPad();
     background-color: $bg-ghost-white;
 }
 
-.section-set--team{
+.team-set{
      @extend %list;
+     @include sectionSetFlex($type: flex, $wrap: nowrap);
+  &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
-.section-set__item--member {
+
+.team-set__item {
     max-width: 270px;
-   
-    background-color: $white-color;
-    box-shadow: $team-box-shadow;
-    border-radius: 0 0 4px 4px;
-
-    line-height: 1.2;
+    
+        background-color: $white-color;
+        box-shadow: $team-box-shadow;
+        border-radius: 0 0 4px 4px;
+    
+        line-height: 1.2;
 }
 
-.section-set__images--member {
+.team-set__images {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
