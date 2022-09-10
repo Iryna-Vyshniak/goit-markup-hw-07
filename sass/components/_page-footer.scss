@@ -14,11 +14,11 @@
 
       font-style: normal;
       font-size: $secondary-font-size;
-}
 
-.address__item:not(:last-child) {
-      margin-bottom: 9px;
+      &:not(:last-child) {
+          margin-bottom: 9px;
         }
+}
 
 .address__map {
   @extend %link;
