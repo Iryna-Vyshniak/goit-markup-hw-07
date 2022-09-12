@@ -259,23 +259,23 @@ summary {
   display: list-item;
 }
 
-.project-cards, .filter-cards, .address, .clients-set, .socials-set, .team-set, .advantages-set__item, .advantages-set, .site-contacts, .site-nav, .section {
+.project-cards, .filter-cards, .footer-address__list, .clients__list, .socials-set, .team__list, .advantages__item, .advantages__list, .site-contacts, .site-nav, .section {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.project-cards__link, .address__contact, .address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link {
+.project-cards__link, .footer-address__contact, .footer-address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link {
   text-decoration: none;
   color: inherit;
 }
 
-.member-content__description, .set__description {
+.team__member-description, .advantages__description {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.form, .member-team, .business, .button__main-button, .hero, .title, .section__title {
+.form, .team, .business, .button__main-button, .hero, .title, .section__title {
   text-align: center;
 }
 
@@ -366,7 +366,7 @@ body {
   color: #212121;
 }
 
-.set__title {
+.set-title {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -445,12 +445,12 @@ body {
   color: #2196f3;
 }
 
-.page-footer__logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
 }
-.page-footer__logo__accent {
+.footer__logo__accent {
   color: #2196f3;
 }
 
@@ -539,24 +539,24 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.company-advantages {
+.advantages {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
-.advantages-set {
+.advantages__list {
   display: flex;
   flex-wrap: nowrap;
 }
-.advantages-set__item:not(:last-child) {
+.advantages__list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-set__item {
+.advantages__item {
   max-width: 270px;
 }
 
-.advantages-thumb {
+.advantages__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -568,7 +568,7 @@ body {
   border-radius: 4px;
 }
 
-.set__description {
+.advantages__description {
   font-size: 14px;
 }
 
@@ -577,24 +577,24 @@ body {
   padding-bottom: 94px;
 }
 
-.business-set {
+.business__list {
   position: relative;
   display: flex;
   align-items: center;
   max-width: 370px;
 }
 
-.business-set__item {
+.business__item {
   position: relative;
   display: flex;
   align-items: center;
   max-width: 370px;
 }
-.business-set__item:not(:last-child) {
+.business__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.set__descr {
+.business__descr {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -612,47 +612,47 @@ body {
   text-transform: uppercase;
 }
 
-.member-team {
+.team {
   background-color: #f5f4fa;
 }
 
-.team-set {
+.team__list {
   display: flex;
   flex-wrap: nowrap;
 }
-.team-set__item:not(:last-child) {
-  margin-right: 30px;
-}
 
-.team-set__item {
+.team__item {
   max-width: 270px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   line-height: 1.2;
 }
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
 
-.team-set__images {
+.team__images {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.member-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.member-content__name {
+.team__member-name {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.member-content__description {
+.team__member-description {
   margin-bottom: 16px;
 }
 
@@ -689,15 +689,16 @@ body {
   fill: currentColor;
 }
 
-.clients-set {
+.clients__list {
   display: flex;
   flex-wrap: nowrap;
 }
-.clients-set__item:not(:last-child) {
+
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-set__logo {
+.clients__logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -710,41 +711,42 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, border;
 }
-.clients-set__logo:hover, .clients-set__logo:focus, .clients-set__logo:active {
+.clients__logo:hover, .clients__logo:focus, .clients__logo:active {
   color: #2196f3;
   border: 1px solid #2196f3;
 }
 
-.clients-set__icon {
+.clients__icon {
   fill: currentColor;
 }
 
-.page-footer {
+.footer {
   background-color: #2f303a;
 }
 
-.container-footer {
+.footer-container {
   display: flex;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.address {
+.footer-address__list {
   margin-top: 0;
   margin-bottom: 0;
   font-style: normal;
   font-size: 14px;
 }
-.address:not(:last-child) {
+
+.footer-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address__map {
+.footer-address__map {
   color: #ffffff;
 }
 
-.address__contact {
+.footer-address__contact {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -759,12 +761,12 @@ body {
   text-align: left;
 }
 
-.socials-set__link--page-footer {
+.footer-socials__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
-.socials-set__icon--page-footer {
+.footer-socials__icon {
   fill: currentColor;
 }
 
@@ -802,7 +804,7 @@ body {
   line-height: 1.2;
 }
 
-.signup-button {
+.footer-signup__button {
   position: relative;
   display: flex;
   align-items: center;
@@ -811,7 +813,7 @@ body {
   padding: 10px 28px;
 }
 
-.signup-icon {
+.footer-signup__icon {
   position: absolute;
   right: 28px;
   display: inline-flex;
@@ -859,7 +861,7 @@ body {
   transition-property: transform, opacity;
 }
 
-.button--modal-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -871,7 +873,7 @@ body {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.button--modal-close:focus > .modal__icon-close, .button--modal-close:hover > .modal__icon-close, .button--modal-close:active > .modal__icon-close {
+.modal__button-close:focus > .modal__icon-close, .modal__button-close:hover > .modal__icon-close, .modal__button-close:active > .modal__icon-close {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1121,7 +1123,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-.thumb-overlay {
+.project-cards__thumb-overlay {
   position: relative;
   width: 370px;
   height: 294px;

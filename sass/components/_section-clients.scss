@@ -1,13 +1,14 @@
-.clients-set {
+.clients__list {
     @extend %list;
         @include sectionSetFlex($type: flex, $wrap: nowrap);
+    }
     
-        &__item:not(:last-child) {
+.clients__item:not(:last-child) {
             margin-right: 30px;
         }
-}
 
-.clients-set__logo {
+
+.clients__logo {
     @include centeredFlex();
         justify-content: center;
         min-width: 170px;
@@ -28,6 +29,6 @@
         }
 }
 
-.clients-set__icon {
+.clients__icon {
     fill: currentColor;
 }

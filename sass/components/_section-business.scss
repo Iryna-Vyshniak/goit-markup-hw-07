@@ -3,14 +3,14 @@
   @include sectionPad($size-top: 47px, $size-bottom: 94px)
 } 
 
-.business-set {
+.business__list {
      position: relative;
   @include centeredFlex();
   max-width: 370px;
 }
 
 
-.business-set__item {
+.business__item {
   position: relative;
   @include centeredFlex();
   max-width: 370px;
@@ -20,7 +20,7 @@
     }
 }
 
-.set__descr {
+.business__descr {
   position: absolute;
   left: 0;
   bottom: 0;

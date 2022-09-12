@@ -1,17 +1,14 @@
-.member-team {
+.team {
     @extend %centered;
     background-color: $bg-ghost-white;
 }
 
-.team-set{
+.team__list{
      @extend %list;
      @include sectionSetFlex($type: flex, $wrap: nowrap);
-  &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-}
-
-.team-set__item {
+     }
+  
+.team__item {
     max-width: 270px;
     
         background-color: $white-color;
@@ -19,22 +16,26 @@
         border-radius: 0 0 4px 4px;
     
         line-height: 1.2;
+
+        &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.team-set__images {
+.team__images {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.member-content {
+.team__content {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.member-content__name {
+.team__member-name {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -43,7 +44,7 @@
 }
 
 
-.member-content__description {
+.team__member-description {
     @extend %description;
     margin-bottom: 16px;
 }

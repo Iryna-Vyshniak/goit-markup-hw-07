@@ -1,9 +1,9 @@
-.company-advantages {
+.advantages {
     @include sectionPad($size-top: 94px, $size-bottom: 47px);
 }
 
 
-.advantages-set {
+.advantages__list {
     @extend %list;
     @include sectionSetFlex($type: flex, $wrap: nowrap);
     &__item:not(:last-child) {
@@ -11,13 +11,13 @@
     }
 }
 
-.advantages-set__item {
+.advantages__item {
     @extend %list;
     max-width: 270px;   
 }
 
 
-.advantages-thumb {
+.advantages__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@
   border-radius: 4px;
 }
 
-.set__description {
+.advantages__description {
     @extend %description;
     font-size: $secondary-font-size;
 }
