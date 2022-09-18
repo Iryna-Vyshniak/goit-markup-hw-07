@@ -37,6 +37,7 @@
   margin-top: 0;
   margin-bottom: 4px;
 
+  color: $primary-text-color;
   font-weight: $primary-bold;
   font-size: $card-title-font-size;
   line-height: 2;
@@ -47,6 +48,7 @@
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.9;
+  color: $secondary-text-color;
 }
 
 .project-cards__content {

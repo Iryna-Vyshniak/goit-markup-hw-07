@@ -1101,6 +1101,7 @@ body {
 .project-cards__title {
   margin-top: 0;
   margin-bottom: 4px;
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1111,6 +1112,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.9;
+  color: #757575;
 }
 
 .project-cards__content {
