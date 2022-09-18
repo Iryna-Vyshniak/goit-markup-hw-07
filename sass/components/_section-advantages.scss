@@ -6,14 +6,14 @@
 .advantages__list {
     @extend %list;
     @include sectionSetFlex($type: flex, $wrap: nowrap);
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
 .advantages__item {
     @extend %list;
-    max-width: 270px;   
+    max-width: 270px; 
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 

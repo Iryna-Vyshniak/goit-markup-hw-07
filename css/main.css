@@ -548,12 +548,12 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
-.advantages__list__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .advantages__item {
   max-width: 270px;
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages__thumb {
